@@ -21,12 +21,6 @@ body {
   margin-bottom: 60px;
 }
 
-.hero, hero-content {
-    height: 100vh;
-}
-
-
-
 
 .container,
 .container-fluid,
@@ -44,17 +38,49 @@ body {
 }
 
 .hero {
-    color: white;
+    min-height: 100vh;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 .hero-content {
-    color: white;
+    max-width: 520px;
+    margin-left: 0;
+    color: #fff;
 }
 
-    .hero-content h1,
-    .hero-content p {
-        color: white;
+    .hero-content h1 {
+        font-family: Georgia, serif;
+        font-size: clamp(4rem, 6vw, 6rem);
+        line-height: 0.98;
+        font-weight: 400;
+        letter-spacing: -0.03em;
+        margin: 0 0 1.8rem 0;
+        color: #fff;
     }
+
+.hero-role {
+    color: #e66b2c;
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin: 0 0 2.2rem 0;
+}
+
+.hero-intro {
+    color: #fff;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    max-width: 500px;
+    margin: 0;
+}
+
+.hero .details-button {
+    margin-top: 2rem;
+}
 
 
 .hero-section {
@@ -80,6 +106,10 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     align-items: center;
+}
+
+.odd {
+    background-color: #F3EFE8 !important
 }
 
 .hero-text h1 {
@@ -223,4 +253,9 @@ body {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
+
+    .whitebakground{
+        background-color: white !important;
+    }
+
 }
