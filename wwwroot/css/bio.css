@@ -51,6 +51,22 @@
     padding: 3rem 0 0;
 }
 
+.home-section.odd {
+    position: relative;
+    z-index: 0;
+}
+
+    .home-section.odd::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -100vw;
+        right: -100vw;
+        background: var(--coffee-color);
+        z-index: -1;
+    }
+
 .bio-lead {
     max-width: 600px;
     font-size: 1.2rem;
@@ -285,6 +301,16 @@
 .music-intro h1 {
     font-size: 3.2rem;
     padding-left: 2rem;
+}
+
+.works-list .work-title {
+    color: #222;
+    font-weight: 400;
+}
+
+.works-list .work-meta {
+    color: #333;
+    font-weight: 300;
 }
 
 
