@@ -35,14 +35,14 @@
    ========================= */
 
 .bio-layout {
-    max-width:1200px;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: minmax(0, 1fr) 300px;
     gap: 4rem;
     align-items: start;
     margin: auto;
     background-color: white;
-    padding: 0 0 0 5rem;
+    padding: 0;
 }
 
 .bio-content {
@@ -82,10 +82,22 @@
    BIO GALLERY
    ========================= */
 
-.bio-gallery {
-    padding: 4rem 2rem 2rem;
+.bio-gallery,
+.genre-gallery {
+    order: 2;
+    padding: 1.5rem;
     background-color: var(--tea-color);
+    height: 100%;
 }
+
+    .bio-gallery a,
+    .bio-gallery li {
+        color: var(--font-bright-color);
+        font-style: normal;
+        font-weight: 500;
+        padding: 2rem 0.2rem 0 0.2rem;
+        list-style: none;
+    }
 
 .bio-gallery-inner {
     display: flex;
@@ -105,18 +117,34 @@
         transform: scale(1.45);
     }
 
-    .bio-hero {
-        display: grid;
-        grid-template-columns: 1fr 360px;
-        gap: 5rem;
-        align-items: center;
-        margin-bottom: 5rem;
-    }
+.bio-hero {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 5rem;
+}
 
 .bio-portrait img {
     display: block;
     width: 100%;
     border-radius: 6px;
+}
+
+
+/* =========================
+   GENRE GALLERY
+   ========================= */
+
+@media (min-width: 800px) {
+    .genre-gallery {
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 70px 0 0 0;
+        height: 100%;
+        z-index: 4;
+    }
 }
 
 
@@ -152,7 +180,9 @@
     }
 
 
-/* Publication list */
+/* =========================
+   PUBLICATION LIST
+   ========================= */
 
 .publications-list {
     list-style: none;
@@ -161,9 +191,9 @@
 }
 
     .publications-list li {
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.3rem;
         line-height: 1.65;
-        color: #555;
+        color: #333;
     }
 
     .publications-list a {
@@ -187,7 +217,7 @@
     }
 
 
-/* щоб посилання не розривалися дивно */
+/* Посилання не розриваються дивно */
 
 .research-page a {
     display: inline;
@@ -217,10 +247,46 @@
         margin-bottom: 1.5rem;
     }
 
+.music-section {
+    padding: 2rem;
+}
 
-    .music-section{
-        padding: 2rem;
+
+/* =========================
+   WORKS NAVIGATION
+   ========================= */
+
+.works-navigation {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+    .works-navigation li {
+        margin-bottom: 1rem;
     }
+
+    .works-navigation a {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        color: var(--font-bright-color);
+        text-decoration: none;
+    }
+
+.section-icon {
+    width: 28px;
+    min-width: 28px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #8b7355;
+}
+
+.music-intro h1 {
+    font-size: 3.2rem;
+    padding-left: 2rem;
+}
+
 
 /* =========================
    RESOURCE LINKS
@@ -276,11 +342,7 @@
     .bio-layout {
         grid-template-columns: 1fr;
         gap: 3rem;
-    }
-
-    .bio-gallery {
-        order: 2;
-        padding: 1.5rem;
+        padding-left: 0;
     }
 
     .bio-gallery-inner {
@@ -294,5 +356,21 @@
 
     .research-section h2 {
         font-size: 1.7rem;
+    }
+
+    .bio-page {
+        padding-left: 0;
+        padding-right: 0;
+        padding: 0 0;
+    }
+
+    .bio-intro h1,
+    .research-intro h1,
+    .music-intro h1 {
+        text-align: center;
+    }
+
+    #genres-nav {
+        display: none;
     }
 }

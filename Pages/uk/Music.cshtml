@@ -2,6 +2,7 @@
 @model MusicModel
 @{
 }
+
 <div class="bio-page whitebackground">
 
     <div class="bio-layout">
@@ -9,7 +10,7 @@
         <!-- ОСНОВНИЙ ТЕКСТ -->
         <div class="bio-content">
 
-            <div class="bio-intro">
+            <div class="music-intro">
                 <h1>Музичні твори</h1>
             </div>
 
@@ -115,14 +116,12 @@
                         </div>
 
                     </div>
-
-
                 </div>
             </section>
 
 
             <!-- СИМФОНІЧНА МУЗИКА -->
-            <section class="home-section odd">
+            <section class="home-section odd" id="simphony">
                 <div class="music-section">
                     <h3>Для симфонічного оркестру</h3>
 
@@ -157,26 +156,30 @@
 
 
             <!-- КАМЕРНО-ВОКАЛЬНІ ТВОРИ -->
-            <section class="home-section">
+            <section class="home-section" id="vocal">
                 <div class="music-section">
                     <h3>Камерно-вокальні твори</h3>
 
                     <div class="works-list">
 
                         <div class="work">
-                            <span class="work-title">Вокальний цикл на вірші Ліни Костенко</span>
+                            <span class="work-title">
+                                Вокальний цикл на вірші Ліни Костенко
+                            </span>
 
                             <div class="work-meta">ноти</div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/03/d09b-d09ad0bed181d182d0b5d0bdd0bad0be-d184d0bed180d182d0b5d0bfd196d0b0d0bdd0bdd196.pdf"
                                    target="_blank">ф-но</a>
                                 <a class="resource notes"
-                                   href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/03/d09b-d09ad0bed181d182d0b5d0bdd0bad0be-d0bed180d0bad0b5d181d182d180.pdf"
+                                   href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/03/d09b-d09ad0bed181d0182d0b5d0bdd0bad0be-d0bed180d0bad0b5d181d182d180.pdf"
                                    target="_blank">оркестр</a>
                             </div>
 
                             <div class="work-meta">відео</div>
+
                             <div class="work-links">
                                 <a class="resource video"
                                    href="https://www.youtube.com/watch?v=WAGVpm1taeo"
@@ -188,12 +191,15 @@
                         </div>
 
                         <div class="work">
-                            <span class="work-title">Камерна кантата «Er selbst wird kommen»</span>
+                            <span class="work-title">
+                                Камерна кантата «Er selbst wird kommen»
+                            </span>
                             <div class="work-meta">1999</div>
                         </div>
 
                         <div class="work">
                             <span class="work-title">«Садок вишневий»</span>
+
                             <div class="work-meta">
                                 на слова Олени О’Лір · 2019
                             </div>
@@ -205,6 +211,7 @@
                             </div>
 
                             <div class="work-meta">відео</div>
+
                             <div class="work-links">
                                 <a class="resource video"
                                    href="https://www.youtube.com/watch?v=54DaEgX5r5U"
@@ -221,7 +228,7 @@
 
 
             <!-- ТРІО БАНДУРИСТОК -->
-            <section class="home-section odd">
+            <section class="home-section odd" id="bandura">
                 <div class="music-section">
                     <h3>Для тріо бандуристок</h3>
 
@@ -258,7 +265,7 @@
 
 
             <!-- ВОКАЛЬНО-ІНСТРУМЕНТАЛЬНІ ЕСТРАДНІ ТВОРИ -->
-            <section class="home-section">
+            <section class="home-section" id="pop">
                 <div class="music-section">
                     <h3>Вокально-інструментальні естрадні твори</h3>
 
@@ -279,6 +286,7 @@
                             </div>
 
                             <div class="work-meta">відео</div>
+
                             <div class="work-links">
                                 <a class="resource video"
                                    href="https://www.youtube.com/watch?v=UVK57ZRRICE"
@@ -300,6 +308,7 @@
                             </div>
 
                             <div class="work-meta">відео</div>
+
                             <div class="work-links">
                                 <a class="resource video"
                                    href="https://www.youtube.com/watch?v=HD-H2kpNw8I"
@@ -316,15 +325,18 @@
 
 
             <!-- ХОР -->
-            <section class="home-section odd">
+            <section class="home-section odd" id="choir">
                 <div class="music-section">
                     <h3>Для хору a cappella</h3>
 
                     <div class="works-list">
 
                         <div class="work">
-                            <span class="work-title">Хоровий диптих на слова Т. Шевченка</span>
+                            <span class="work-title">
+                                Хоровий диптих на слова Т. Шевченка
+                            </span>
                             <div class="work-meta">2005</div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/03/d094d0b8d0bfd182d0b8d185-d0bdd0b0-d181d0bbd0bed0b2d0b0-d0a8d0b5d0b2d187d0b5d0bdd0bad0b0.pdf"
@@ -333,14 +345,19 @@
                         </div>
 
                         <div class="work">
-                            <span class="work-title">Чотири аранжування українських пісень</span>
+                            <span class="work-title">
+                                Чотири аранжування українських пісень
+                            </span>
+
                             <div class="work-meta">2016</div>
+
                             <div class="work-meta">
                                 «Ой чий то кінь стоїть» ·
                                 «Туман яром» ·
                                 «Ой ти місяцю» ·
                                 «Ой чорна я си чорна»
                             </div>
+
                             <div class="work-links">
                                 <a class="resource audio"
                                    href="https://soundcloud.com/akadiemichniikamierniikhorkhrieshchatik/oj-chorna-ya-si-chorna"
@@ -351,6 +368,7 @@
                         <div class="work">
                             <span class="work-title">«І на оновленій землі»</span>
                             <div class="work-meta">слова Т. Шевченка · 2025</div>
+
                             <div class="work-links">
                                 <a class="resource video"
                                    href="https://www.youtube.com/watch?v=wriHnJoOS0s"
@@ -361,6 +379,7 @@
                     </div>
                 </div>
             </section>
+
 
             <!-- ФОРТЕПІАНО -->
             <section class="home-section" id="piano">
@@ -379,6 +398,7 @@
                         <div class="work">
                             <span class="work-title">«Калейдоскоп»</span>
                             <div class="work-meta">1989</div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/03/d0bad0b0d0bbd0b5d0b9d0b4d0bed181d0bad0bed0bf.pdf"
@@ -410,6 +430,7 @@
                         <div class="work">
                             <span class="work-title">«Щедрик»</span>
                             <div class="work-meta">за М. Леонтовичем</div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d0a9d0b5d0b4d180d0b8d0ba-d184d0bdd0be.pdf"
@@ -423,6 +444,7 @@
                         <div class="work">
                             <span class="work-title">«Козака несуть»</span>
                             <div class="work-meta">за М. Леонтовичем</div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d09ad0bed0b7d0b0d0bad0b0-d0bdd0b5d181d183d182d18c.pdf"
@@ -433,6 +455,7 @@
                         <div class="work">
                             <span class="work-title">«Дударик»</span>
                             <div class="work-meta">за М. Леонтовичем</div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d094d183d0b4d0b0d180d0b8d0ba3.pdf"
@@ -446,6 +469,7 @@
                         <div class="work">
                             <span class="work-title">«Бог ся рождає»</span>
                             <div class="work-meta">колядка</div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d0b1d0bed0b3-d181d18f-d180d0bed0b6d0b4d0b0d194-d0b4d0b6d0b0d0b7.pdf"
@@ -459,6 +483,7 @@
                         <div class="work">
                             <span class="work-title">«Нова радість стала»</span>
                             <div class="work-meta">колядка</div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d09dd0bed0b2d0b0-d180d0b0d0b4d196d181d182d18c-d181d182d0b0d0bbd0b0-d184d0bdd0be-v2020.pdf"
@@ -472,6 +497,7 @@
                         <div class="work">
                             <span class="work-title">«Радуйся»</span>
                             <div class="work-meta">колядка</div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d0a0d0b0d0b4d183d0b9d181d18f3.pdf"
@@ -484,6 +510,7 @@
 
                         <div class="work">
                             <span class="work-title">«Ой сивая та і зозуленька»</span>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d09ed0b9-d181d0b8d0b2d0b0d18f-d182d0b0-d196-d0b7d0bed0b7d183d0bbd0b5d0bdd18cd0bad0b0.pdf"
@@ -496,6 +523,7 @@
 
                         <div class="work">
                             <span class="work-title">«Третій празник»</span>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d0a2d180d0b5d182d196d0b9-d0bfd180d0b0d0b7d0bdd0b8d0ba.pdf"
@@ -508,7 +536,10 @@
 
                         <div class="work">
                             <span class="work-title">«Чичері»</span>
-                            <div class="work-meta">«Ой Марічко, чичері» за М. Кречком</div>
+                            <div class="work-meta">
+                                «Ой Марічко, чичері» за М. Кречком
+                            </div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d187d0b8d187d0b5d180d1962.pdf"
@@ -519,6 +550,7 @@
                         <div class="work">
                             <span class="work-title">«Галя»</span>
                             <div class="work-meta">«Несе галя воду»</div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d093d0b0d0bbd18f.pdf"
@@ -528,6 +560,7 @@
 
                         <div class="work">
                             <span class="work-title">«Ой у лузі червона калина»</span>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d09ed0b9-d183-d0bbd183d0b7d196-d184d0bed0bdd0be-21-05.pdf"
@@ -575,6 +608,7 @@
                         <div class="work">
                             <span class="work-title">«Brzmienia źródeł»</span>
                             <div class="work-meta">2004</div>
+
                             <div class="work-links">
                                 <a class="resource notes"
                                    href="https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/03/brzmenia_zrodel.pdf"
@@ -586,6 +620,7 @@
                 </div>
             </section>
 
+
             <!-- АРАНЖУВАННЯ НАРОДНИХ ПІСЕНЬ -->
             <section class="home-section" id="folk">
                 <div class="music-section">
@@ -594,7 +629,9 @@
                     <div class="works-list">
 
                         <div class="work">
-                            <span class="work-title">Чотири народні пісні для голосу і фортепіано</span>
+                            <span class="work-title">
+                                Чотири народні пісні для голосу і фортепіано
+                            </span>
                             <div class="work-meta">2014 · редакція 2022</div>
                         </div>
 
@@ -647,6 +684,7 @@
                 </div>
             </section>
 
+
             <!-- DVD -->
             <section class="home-section odd" id="DVD">
                 <div class="music-section">
@@ -662,10 +700,11 @@
                 </div>
             </section>
 
+
             <!-- POP & AI -->
             <section class="home-section" id="POP">
                 <div class="music-section">
-                    <h3>DVD</h3>
+                    <h3>POP & AI</h3>
 
                     <div class="work-links">
                         <span class="work-title">Прекрасний Києве</span>
@@ -676,16 +715,24 @@
         </div>
 
 
-    <aside class="bio-gallery">
-        <div class="bio-gallery-inner">
-            <ul>
-                    <li><a href="#scene">Сценічні</a></li>
-                    <li><a href="#piano">Фортепіанні</a></li>
-
-
+        <!-- НАВІГАЦІЯ -->
+        <aside class="genre-gallery" id="genres-nav">
+            <div class="bio-gallery-inner">
+                <ul class="works-navigation">
+                    <li><a href="#scene">Сценічні твори</a></li>
+                    <li><a href="#simphony">Для симфонічного оркестру</a></li>
+                    <li><a href="#vocal">Камерно-вокальні твори</a></li>
+                    <li><a href="#bandura">Для тріо бандуристок</a></li>
+                    <li><a href="#pop">Вокально-інструментальні естрадні твори</a></li>
+                    <li><a href="#choir">Для хору a cappella</a></li>
+                    <li><a href="#piano">Для фортепіано</a></li>
+                    <li><a href="#chamber">Для камерних складів</a></li>
+                    <li><a href="#folk">Аранжування народних пісень</a></li>
+                    <li><a href="#DVD">DVD</a></li>
+                    <li><a href="#POP">POP &amp; AI</a></li>
                 </ul>
-           
+            </div>
+        </aside>
 
-        </div>
-    </aside>
+    </div>
 </div>
