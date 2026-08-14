@@ -8,8 +8,9 @@
   }
 }
 
+
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
@@ -110,7 +111,7 @@ body {
     align-items: center;
 }
 
-.odd {
+.odd, .bg-coffee {
     background-color: #F3EFE8 !important
 }
 
@@ -185,24 +186,35 @@ body {
     margin-bottom: 2rem;
 }
 
-.works-list > div {
+.works-list {
     display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 0.3rem 2rem;
-    padding: 1rem 0;
-    border-bottom: 1px solid #eee;
+    grid-template-columns: 1fr;
+    gap: 1.5rem 3rem;
 }
 
-.works-list small {
-    grid-column: 1;
-    color: #777;
+    .works-list > div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Назва */
+    .works-list span {
+        grid-column: 1;
+    }
+
+    /* Рік та додаткова інформація */
+    .works-list small {
+        grid-column: 1;
+        color: #777;
+    }
+
+/* На широкому екрані — 2 колонки */
+@media (min-width: 800px) {
+    .works-list {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-.works-list b {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    font-weight: normal;
-}
 
 .research-list > div {
     margin-bottom: 2rem;
