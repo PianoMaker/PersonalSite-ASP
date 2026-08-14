@@ -1,5 +1,10 @@
-﻿html {
-  font-size: 14px;
+﻿:root {
+    --coffee-color: #F3EFE8;
+}
+
+
+html {
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -22,6 +27,14 @@ body {
     margin-bottom: 60px;
     background: #fff;
     color: #222;
+}
+
+.header {
+    padding: 100px
+}
+
+.language-switcher {
+    padding: 0 3rem 0 0;    
 }
 
 
@@ -112,7 +125,7 @@ body {
 }
 
 .odd, .bg-coffee {
-    background-color: #F3EFE8 !important
+    background-color: var(--coffee-color) !important
 }
 
 .hero-text h1 {
@@ -280,7 +293,7 @@ body {
     }
 
     .whitebakground{
-        background-color: white !important;
+        background-color: white;
     }
 
 }
