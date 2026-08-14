@@ -35,10 +35,14 @@
    ========================= */
 
 .bio-layout {
+    max-width:1200px;
     display: grid;
     grid-template-columns: minmax(0, 1fr) 300px;
     gap: 4rem;
     align-items: start;
+    margin: auto;
+    background-color: white;
+    padding: 0 0 0 5rem;
 }
 
 .bio-content {
@@ -80,6 +84,7 @@
 
 .bio-gallery {
     padding: 4rem 2rem 2rem;
+    background-color: var(--tea-color);
 }
 
 .bio-gallery-inner {
@@ -93,15 +98,20 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    transition: transform 0.25s ease;
 }
 
-.bio-hero {
-    display: grid;
-    grid-template-columns: 1fr 360px;
-    gap: 5rem;
-    align-items: center;
-    margin-bottom: 5rem;
-}
+    .bio-gallery img:hover {
+        transform: scale(1.45);
+    }
+
+    .bio-hero {
+        display: grid;
+        grid-template-columns: 1fr 360px;
+        gap: 5rem;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
 
 .bio-portrait img {
     display: block;
@@ -207,6 +217,10 @@
         margin-bottom: 1.5rem;
     }
 
+
+    .music-section{
+        padding: 2rem;
+    }
 
 /* =========================
    RESOURCE LINKS

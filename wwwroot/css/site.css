@@ -1,5 +1,7 @@
 ﻿:root {
     --coffee-color: #F3EFE8;
+    --tea-color: #F8F8E8;
+    --font-bright-color: #e66b2c;
 }
 
 
@@ -192,8 +194,8 @@ body {
 }
 
 .home-section h3 {
-    color: #e66b2c;
-    font-size: 0.8rem;
+    color: var(--font-bright-color);
+    font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     margin-bottom: 2rem;
@@ -267,6 +269,8 @@ body {
         color: #555;
     }
 
+
+
 @media (max-width: 768px) {
     .hero-section {
         min-height: auto;
@@ -292,8 +296,8 @@ body {
         padding-right: 1.5rem;
     }
 
-    .whitebakground{
-        background-color: white;
-    }
+}
 
+.whitebackground {
+    background-color: var(--coffee-color);
 }
