@@ -14,12 +14,12 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-coffee border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-light bg-coffee border-bottom box-shadow">
             <div class="container">
 
-                <a class="navbar-brand" href="@(Context.Request.Path.StartsWithSegments("/en") ? "/en" : "/uk")">
+               @*  <a class="navbar-brand" href="@(Context.Request.Path.StartsWithSegments("/en") ? "/en" : "/uk")">
                     @(Context.Request.Path.StartsWithSegments("/en") ? "Andrii Bondarenko" : "Андрій Бондаренко")
-                </a>
+                </a> *@
 
                 <button class="navbar-toggler"
                         type="button"
@@ -43,24 +43,26 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/en/Music">Musical Works</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="/en/Video">Video</a>
-                            </li>
-
-                            <li class="nav-item">
                                 <a class="nav-link text-dark" href="/en/Bio">Biography</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/en/Research">Research</a>
+                                <a class="nav-link text-dark" href="/en/Music">Musical Works</a>
                             </li>
 
+@*                             <li class="nav-item">
+                                <a class="nav-link text-dark" href="/en/Video">Video</a>
+                            </li>
+ *@
+                            
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="/en/Research">Research</a>
+                            </li>
+@* 
                             <li class="nav-item">
                                 <a class="nav-link text-dark" href="/en/Publications">Publications About Me</a>
-                            </li>
+                            </li> *@
 
                             <li class="nav-item">
                                 <a class="nav-link text-dark" href="/en#contact">Contact</a>
@@ -75,24 +77,24 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/uk/Music">Музичні твори</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="/uk/Video">Відео</a>
-                            </li>
-
-                            <li class="nav-item">
                                 <a class="nav-link text-dark" href="/uk/Bio">Біографія</a>
                             </li>
 
                             <li class="nav-item">
+                                <a class="nav-link text-dark" href="/uk/Music">Музичні твори</a>
+                            </li>
+
+@*                             <li class="nav-item">
+                                <a class="nav-link text-dark" href="/uk/Video">Відео</a>
+                            </li> *@
+
+                           <li class="nav-item">
                                 <a class="nav-link text-dark" href="/uk/Research">Дослідження</a>
                             </li>
 
-                            <li class="nav-item">
+@*                             <li class="nav-item">
                                 <a class="nav-link text-dark" href="/uk/Publications">Публікації про мене</a>
-                            </li>
+                            </li> *@
 
                             <li class="nav-item">
                                 <a class="nav-link text-dark" href="/uk#contact">Контакти</a>
@@ -124,7 +126,7 @@
     </header>
 
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
