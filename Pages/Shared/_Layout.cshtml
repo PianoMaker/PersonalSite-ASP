@@ -104,20 +104,31 @@
                     </ul>
 
                     <!-- LANGUAGE SWITCHER -->
-
                     <div class="language-switcher">
+
+                        @{
+                            var currentPath = Context.Request.Path.Value ?? "/";
+                            var ukPath = currentPath.StartsWith("/en")
+                            ? "/uk" + currentPath.Substring(3)
+                            : currentPath;
+                            var enPath = currentPath.StartsWith("/uk")
+                            ? "/en" + currentPath.Substring(3)
+                            : currentPath;
+                        }
+
                         @if (Context.Request.Path.StartsWithSegments("/en"))
                         {
-                            <a href="/uk" class="text-dark">UK</a>
+                            <a href="@ukPath" class="text-dark">UK</a>
                             <span class="text-muted">|</span>
-                            <a href="/en" class="text-accent">EN</a>
+                            <a href="@enPath" class="text-accent">EN</a>
                         }
                         else
                         {
-                            <a href="/uk" class="text-accent">UK</a>
+                            <a href="@ukPath" class="text-accent">UK</a>
                             <span class="text-muted">|</span>
-                            <a href="/en" class="text-dark">EN</a>
+                            <a href="@enPath" class="text-dark">EN</a>
                         }
+
                     </div>
 
                 </div>
