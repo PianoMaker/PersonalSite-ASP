@@ -6,10 +6,12 @@ namespace PersonalSite.Pages.uk
     public class ResearchModel : PageModel
     {
         private readonly IWebHostEnvironment _environment;
+        private readonly ILogger<MusicModel> _logger;
 
-        public ResearchModel(IWebHostEnvironment environment)
+        public ResearchModel(IWebHostEnvironment environment, ILogger<MusicModel> logger)
         {
             _environment = environment;
+            _logger = logger;
         }
 
         public List<Work> Works { get; set; } = new();
@@ -27,6 +29,10 @@ namespace PersonalSite.Pages.uk
             Works = allWorks
                 .Where(w => w.Section == "research")
                 .ToList();
+
+            _logger.LogInformation(
+    "Індексовано наукових статей: {Count}",
+    Works.Count);
         }
     }
 }
