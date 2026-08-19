@@ -1,0 +1,57 @@
+﻿@page
+@model PersonalSite.Pages.uk.SearchModel
+@{
+    ViewData["Title"] = "Пошук";
+}
+
+<div class="bio-page coffebackground">
+
+    <div class="page-layout">
+
+        <!-- ОСНОВНИЙ ТЕКСТ -->
+        @if (Model.Results.Any())
+        {
+            <div class="works-list">
+
+                @foreach (var result in Model.Results)
+                {
+                    <div class="work">
+
+                        <span class="work-title">
+                            @Html.Raw(result.Title)
+                        </span>
+
+                        @if (!string.IsNullOrWhiteSpace(result.Description))
+                        {
+                            <div class="work-meta">
+                                @Html.Raw(result.Description)
+                            </div>
+                        }
+
+                        @if (result.Links.Any())
+                        {
+                            <div class="work-links">
+
+                                @foreach (var link in result.Links)
+                                {
+                                    <a class="resource @link.Type"
+                                       href="@link.Url"
+                                       target="_blank">
+                                        @link.UkText
+                                    </a>
+                                }
+
+                            </div>
+                        }
+
+                    </div>
+                }
+
+            </div>
+        }
+        else
+        {
+            <p>Нічого не знайдено.</p>
+        }
+    </div>
+</div>
