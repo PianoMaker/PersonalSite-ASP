@@ -305,3 +305,22 @@ body {
 .coffebackground {
     background-color: var(--coffee-color);
 }
+
+#searchform {
+    padding-top: 5rem;
+}
+
+    #searchform input{
+        width: 300px;
+        height: 2rem;
+        background-color: #eee;
+        opacity: 0.7;
+    }
+
+    #searchform button {
+        height: 2rem;
+        background-color: #eee;
+        opacity: 0.7;
+    }
+
+
