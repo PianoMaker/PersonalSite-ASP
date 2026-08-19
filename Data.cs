@@ -1,38 +1,68 @@
-﻿    namespace PersonalSite.Data
+﻿using System.Text.Encodings.Web;
+using System.Text.Json;
+
+
+namespace PersonalSite.Data
+{
+
+    public class Work
     {
-        public class MusicalWork
+        public string Section { get; set; } = "";
+        public string Subsection { get; set; } = "";
+
+        public string UkTitle { get; set; } = "";
+        public string EnTitle { get; set; } = "";
+
+        public string UkMeta { get; set; } = "";
+        public string EnMeta { get; set; } = "";
+
+        public List<WorkLink> Links { get; set; } = new();
+    }
+
+    public class WorkLink
+    {
+        public string Type { get; set; } = "";
+        public string UkText { get; set; } = "";
+        public string EnText { get; set; } = "";
+        public string Url { get; set; } = "";
+    }
+
+    
+    public static class Data
+    {
+
+
+        public static List<Work> GetDataFromJson(string path)
         {
-            public string Section { get; set; } = "";
-            public string Subsection { get; set; } = "";
+            var json = File.ReadAllText(path);
 
-            public string UkTitle { get; set; } = "";
-            public string EnTitle { get; set; } = "";
+            var works = JsonSerializer.Deserialize<List<Work>>(json);
 
-            public string UkMeta { get; set; } = "";
-            public string EnMeta { get; set; } = "";
-
-            public List<WorkLink> Links { get; set; } = new();
+            return works ?? new List<Work>();
         }
 
-        public class WorkLink
+        public static void WriteDataToJson(List<Work> works, string path)
         {
-            public string Type { get; set; } = "";
-            public string UkText { get; set; } = "";
-            public string EnText { get; set; } = "";
-            public string Url { get; set; } = "";
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+            };
+
+            var json = JsonSerializer.Serialize(works, options);
+
+            File.WriteAllText(path, json);
         }
 
 
-        public static class MusicData
-        {
-            public static List<MusicalWork> Works { get; } = new()
+        public static List<Work> Works { get; } = new()
             {
 
                 // =====================================================
                 // СЦЕНІЧНІ ТВОРИ
                 // =====================================================
 
-                new MusicalWork
+                new Work
                 {
                     Section = "scene",
                     UkTitle = "«Золота середина»",
@@ -41,7 +71,7 @@
                     EnMeta = "vocal and choreographic divertissement · 2003 · libretto by O. Tolokna and the composer"
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "scene",
                     UkTitle = "«Вигнання з раю»",
@@ -50,7 +80,7 @@
                     EnMeta = "mini-opera on a biblical subject · 2002"
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "scene",
                     UkTitle = "«Райок по-українськи»",
@@ -90,7 +120,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "scene",
                     UkTitle = "«Ходить гарбуз по городу»",
@@ -99,7 +129,7 @@
                     EnMeta = "vocal and choreographic scene based on folk texts · 2007"
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "scene",
                     UkTitle = "«Муха-цокотуха»",
@@ -108,7 +138,7 @@
                     EnMeta = "children’s ballet based on the fairy tale K. Chukovsky · 2008"
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "scene",
                     UkTitle = "«Маугліана»",
@@ -117,7 +147,7 @@
                     EnMeta = "children’s ballet based on the fairy tale R. Kipling · 2009"
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "scene",
                     UkTitle = "«Аліса в дивокраї»",
@@ -126,7 +156,7 @@
                     EnMeta = "children’s ballet based on the fairy tale L. Carroll · 2011"
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "scene",
                     UkTitle = "«Різдвяна казка»",
@@ -145,7 +175,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "scene",
                     UkTitle = "«Кай і Герда»",
@@ -169,7 +199,7 @@
                 // СИМФОНІЧНИЙ ОРКЕСТР
                 // =====================================================
 
-                new MusicalWork
+                new Work
                 {
                     Section = "simphony",
                     UkTitle = "Симфонічна поема «Смуток над Дніпром»",
@@ -178,7 +208,7 @@
                     EnMeta = "Symphonic poem · 1996"
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "simphony",
                     UkTitle = "Концерт для фортепіано з оркестром",
@@ -187,7 +217,7 @@
                     EnMeta = "2002"
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "simphony",
                     UkTitle = "Симфонічна поема «2004»",
@@ -218,7 +248,7 @@
                 // КАМЕРНО-ВОКАЛЬНІ
                 // =====================================================
 
-                new MusicalWork
+                new Work
                 {
                     Section = "vocal",
                     UkTitle = "Вокальний цикл на вірші Ліни Костенко",
@@ -258,7 +288,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "vocal",
                     UkTitle = "Камерна кантата «Er selbst wird kommen»",
@@ -267,7 +297,7 @@
                     EnMeta = "1999"
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "vocal",
                     UkTitle = "«Садок вишневий»",
@@ -305,7 +335,7 @@
                 // ТРІО БАНДУРИСТОК
                 // =====================================================
 
-                new MusicalWork
+                new Work
                 {
                     Section = "bandura",
                     UkTitle = "«Бандурою прикриюсь як щитом»",
@@ -324,7 +354,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "bandura",
                     UkTitle = "«Ой чорна я си чорна»",
@@ -343,7 +373,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "bandura",
                     UkTitle = "«І на оновленій землі»",
@@ -357,7 +387,7 @@
                 // ЕСТРАДНІ
                 // =====================================================
 
-                new MusicalWork
+                new Work
                 {
                     Section = "pop",
                     UkTitle = "«Гімн Вікіпедії»",
@@ -397,7 +427,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "pop",
                     UkTitle = "«Реформа»",
@@ -428,7 +458,7 @@
                 // ХОР
                 // =====================================================
 
-                new MusicalWork
+                new Work
                 {
                     Section = "choir",
                     UkTitle = "Хоровий диптих на слова Т. Шевченка",
@@ -447,7 +477,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "choir",
                     UkTitle = "Чотири аранжування українських пісень",
@@ -466,7 +496,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "choir",
                     UkTitle = "«І на оновленій землі»",
@@ -485,7 +515,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "choir",
                     UkTitle = "«Всевишній, всемогутній Судіє»",
@@ -509,7 +539,7 @@
                 // ФОРТЕПІАНО
                 // =====================================================
 
-               new MusicalWork
+               new Work
     {
         Section = "piano",
         Subsection = "two-hands",
@@ -519,7 +549,7 @@
         EnMeta = "2002"
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "two-hands",
@@ -539,7 +569,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "two-hands",
@@ -549,7 +579,7 @@
         EnMeta = "1996"
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "two-hands",
@@ -559,7 +589,7 @@
         EnMeta = "2002"
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "two-hands",
@@ -569,7 +599,7 @@
         EnMeta = "2007"
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "two-hands",
@@ -579,7 +609,7 @@
         EnMeta = "2026"
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "two-hands",
@@ -589,7 +619,7 @@
         EnMeta = "In memory of Ukrainians who suffered from Polish aggression, 2026"
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "folk",
@@ -616,7 +646,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "folk",
@@ -636,7 +666,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "folk",
@@ -663,7 +693,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "folk",
@@ -690,7 +720,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "folk",
@@ -717,7 +747,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "folk",
@@ -744,7 +774,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "folk",
@@ -771,7 +801,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "folk",
@@ -798,7 +828,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "folk",
@@ -825,7 +855,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "folk",
@@ -845,7 +875,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "folk",
@@ -865,7 +895,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "four-hands",
@@ -892,7 +922,7 @@
         }
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "four-hands",
@@ -902,7 +932,7 @@
         EnMeta = "2001"
     },
 
-    new MusicalWork
+    new Work
     {
         Section = "piano",
         Subsection = "four-hands",
@@ -927,7 +957,7 @@
                 // АРАНЖУВАННЯ НАРОДНИХ ПІСЕНЬ
                 // =====================================================
 
-                new MusicalWork
+                new Work
                 {
                     Section = "folk",
                     UkTitle = "Чотири народні пісні для голосу і фортепіано",
@@ -936,7 +966,7 @@
                     EnMeta = "2014 · revision 2022"
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "folk",
                     UkTitle = "«Ой у лузі червона калина»",
@@ -953,7 +983,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "folk",
                     UkTitle = "«Лента за лентою»",
@@ -970,7 +1000,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "folk",
                     UkTitle = "«Ой у лісі на полянці»",
@@ -987,7 +1017,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "folk",
                     UkTitle = "«За Україну»",
@@ -1004,7 +1034,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "folk",
                     UkTitle = "«Зродились ми великої години»",
@@ -1026,11 +1056,11 @@
                 // DVD
                 // =====================================================
 
-                new MusicalWork
+                new Work
                 {
                     Section = "DVD",
-                    UkTitle = "DVD2 cours de danse contemporaine",
-                    EnTitle = "DVD2 cours de danse contemporaine",
+                    UkTitle = "Irena Tatiboit. DVD cours de danse contemporaine",
+                    EnTitle = "Irena Tatiboit. DVD cours de danse contemporaine",
                     UkMeta = "",
                     EnMeta = "",
                     Links = new()
@@ -1047,10 +1077,85 @@
 
 
                 // =====================================================
+                // КАМЕРНІ ТВОРИ
+                // =====================================================
+
+                new Work
+                {
+                    Section = "chamber",
+                    Subsection = "",
+                    UkTitle = "«Соната для флейти і фортепіано»",
+                    EnTitle = "“Sonata for Flute and Piano”",
+                    UkMeta = "1997",
+                    EnMeta = "1997"
+                },
+
+                new Work
+                {
+                    Section = "chamber",
+                    Subsection = "",
+                    UkTitle = "Sinfonia piccola № 1",
+                    EnTitle = "Sinfonia piccola No. 1",
+                    UkMeta = "2001",
+                    EnMeta = "2001"
+                },
+
+                new Work
+                {
+                    Section = "chamber",
+                    Subsection = "",
+                    UkTitle = "Sinfonia piccola № 2",
+                    EnTitle = "Sinfonia piccola No. 2",
+                    UkMeta = "2002",
+                    EnMeta = "2002"
+                },
+
+                new Work
+                {
+                    Section = "chamber",
+                    Subsection = "",
+                    UkTitle = "Sinfonia piccola № 3",
+                    EnTitle = "Sinfonia piccola No. 3",
+                    UkMeta = "2003",
+                    EnMeta = "2003"
+                },
+
+                new Work
+                {
+                    Section = "chamber",
+                    Subsection = "",
+                    UkTitle = "«Струнний квартет»",
+                    EnTitle = "“String Quartet”",
+                    UkMeta = "2004",
+                    EnMeta = "2004"
+                },
+
+                new Work
+                {
+                    Section = "chamber",
+                    Subsection = "",
+                    UkTitle = "Brzmienia źródeł",
+                    EnTitle = "Brzmienia źródeł",
+                    UkMeta = "2004",
+                    EnMeta = "2004",
+                    Links = new()
+                    {
+                        new WorkLink
+                        {
+                            Type = "notes",
+                            UkText = "ноти",
+                            EnText = "score",
+                            Url = "https://andrijbondarenko.wordpress.com/"
+                        }
+                    }
+                },
+
+
+                // =====================================================
                 // POP & AI
                 // =====================================================
 
-                new MusicalWork
+                new Work
                 {
                     Section = "POP",
                     UkTitle = "“Не позичай мені свою любов, не позичай”",
@@ -1069,7 +1174,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "POP",
                     UkTitle = "«Мамо»",
@@ -1078,7 +1183,7 @@
                     EnMeta = "fantasy on popular themes, for choir and orchestra · 2010<br>version for bandura trio · 2010"
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "POP",
                     UkTitle = "«Шлях на обрії»",
@@ -1097,7 +1202,7 @@
                     }
                 },
 
-                new MusicalWork
+                new Work
                 {
                     Section = "POP",
                     UkTitle = "«Прекрасний Києве»",
@@ -1123,5 +1228,5 @@
                     }
                 }
             };
-        }
     }
+}
