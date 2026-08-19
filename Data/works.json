@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "Section": "scene",
     "Subsection": "",
@@ -1408,6 +1408,207 @@
         "UkText": "стаття",
         "EnText": "article",
         "Url": "https://doi.org/10.1353/fam.2023.a909191"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "«Вікі любить пам'ятки – 2014»: напередодні старту.",
+    "EnTitle": "",
+    "UkMeta": "Культура і життя. № 36. 5–11 вересня 2014. С. 14–15.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "http://issuu.com/culture.ua/docs/"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "До 80-річчя Валентина Сильвестрова.",
+    "EnTitle": "",
+    "UkMeta": "Український інтерес. 30 вересня 2017.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "https://uain.press/blogs/andrij-bondarenko-80-richchya-valentyna-sylvestrova-466981"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "Уроки музики українською? Легко!",
+    "EnTitle": "",
+    "UkMeta": "Український інтерес. 11 лютого 2018.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "https://uain.press/blogs/andrij-bondarenko-uroky-muzyky-ukrayinskoyu-legko-703839"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "Дитячі музичні школи: чого насправді хочуть реформатори?",
+    "EnTitle": "",
+    "UkMeta": "Культура і життя. № 2. 12 січня 2018. С. 2.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "https://andrijbondarenko.wordpress.com/2018/01/11/music_schools_what_do_reformers_really_want/"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "Чи тепер Микола Лисенко став би зіркою?",
+    "EnTitle": "",
+    "UkMeta": "Український інтерес. 24 березня 2018.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "https://uain.press/blogs/andrij-bondarenko-chy-teper-mykola-lysenko-stav-zirkoyu-764458"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "Засновникові польської опери – 200 років.",
+    "EnTitle": "",
+    "UkMeta": "Український інтерес. 5 травня 2019.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "https://uain.press/blogs/zasnovnykovi-polskoyi-opery-200-rokiv-1030710"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "Реформа мистецьких шкіл: що хочуть змінити і що вимагають викладачі?",
+    "EnTitle": "",
+    "UkMeta": "Український інтерес. 17 травня 2019.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "https://uain.press/culture/reforma-mystetskyh-shkil-shho-hochut-zminyty-i-shho-vymagayut-vykladachi-1035514"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "Мирослав Скорик як творець епохи.",
+    "EnTitle": "",
+    "UkMeta": "Слово просвіти. 2020. № 14–15. С. 9.",
+    "EnMeta": "",
+    "Links": []
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "Про «Ковчег Україна» без зради.",
+    "EnTitle": "",
+    "UkMeta": "Український інтерес. 3 вересня 2021.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "https://uain.press/articles/pro-kovcheg-ukrayina-bez-zradi-1450691"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "Гія Канчелі – видатний композитор і друг України.",
+    "EnTitle": "",
+    "UkMeta": "Український інтерес. 7 жовтня 2021.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "https://uain.press/blogs/giya-kancheli-vydatnyj-kompozytor-i-drug-ukrayiny-1090202"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "Яків Яциневич – фундатор української духовної музики.",
+    "EnTitle": "",
+    "UkMeta": "Український інтерес. 8 листопада 2021.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "https://uain.press/blogs/150-rokiv-yakovu-yatsynevychu-fundatoru-ukrayinskoyi-duhovnoyi-muzyky-1107698"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "Чи варто виконувати російську музику?",
+    "EnTitle": "",
+    "UkMeta": "Український інтерес. 23 березня 2022.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "https://uain.press/articles/1565013-1565013"
+      }
+    ]
+  },
+  {
+    "Section": "research",
+    "Subsection": "periodicals",
+    "UkTitle": "НМАУ імені Чайковського: перейменувати не можна залишити.",
+    "EnTitle": "",
+    "UkMeta": "Український інтерес. 22 червня 2022.",
+    "EnMeta": "",
+    "Links": [
+      {
+        "Type": "article",
+        "UkText": "стаття",
+        "EnText": "article",
+        "Url": "https://uain.press/articles/nmau-imeni-chajkovskogo-perejmenuvati-ne-mozhna-zalishiti-1629664"
       }
     ]
   }
