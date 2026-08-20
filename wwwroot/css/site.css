@@ -2,6 +2,7 @@
     --coffee-color: #F3EFE8;
     --tea-color: #F8F8CC;
     --font-bright-color: #e66b2c;
+    --accent-color: #e66b2c;
 }
 
 
@@ -128,6 +129,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     align-items: center;
+    transform: translateY(-50px);
 }
 
 .odd, .bg-coffee {
@@ -227,6 +229,67 @@ body {
         color: #777;
     }
 
+
+    /*SEARCH BUTTON */
+#searchform {
+    display: flex;
+    width: 370px;
+    padding-top: 4rem;
+}
+
+    #searchform input {
+        flex: 1;
+        height: 2.2rem;
+        padding: 0 0.8rem;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.15);        
+        font-size: 0.95rem;
+        backdrop-filter: blur(3px);
+        color:white;
+    }
+
+        #searchform input::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+    #searchform button {
+        height: 2.2rem;
+        padding: 0 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        background: #333;
+        color: white;
+        cursor: pointer;
+    }
+
+        #searchform button:hover {
+            background: rgba(255, 255, 255, 0.35);
+            color: var(--tea-color);            
+        }
+
+
+        /* NAVIGATION BAR */
+
+.navbar {
+    background: linear-gradient( 90deg, #F3EFE8 0%, #EDE5CA 50%, #F3EFE8 100% ) !important;
+    border-bottom: 1px solid var(--font-bright-color) !important;
+}
+
+    .navbar .nav-link {
+        color: #3f3832 !important;
+    }
+
+        .navbar .nav-link:hover {
+            color: var(--font-bright-color) !important;
+        }
+
+.language-switcher a {
+    color: #3f3832 !important;
+}
+
+    .language-switcher a:hover {
+        color: var(--font-bright-color) !important;
+    }
+
 /* На широкому екрані — 2 колонки */
 @media (min-width: 800px) {
     .works-list {
@@ -283,7 +346,7 @@ body {
     .hero-inner {
         grid-template-columns: 1fr;
         gap: 2rem;
-        padding-top: 4rem;
+        padding-top: 4rem;        
     }
 
     .hero-text h1 {
@@ -306,21 +369,5 @@ body {
     background-color: var(--coffee-color);
 }
 
-#searchform {
-    padding-top: 5rem;
-}
-
-    #searchform input{
-        width: 300px;
-        height: 2rem;
-        background-color: #eee;
-        opacity: 0.7;
-    }
-
-    #searchform button {
-        height: 2rem;
-        background-color: #eee;
-        opacity: 0.7;
-    }
 
 
