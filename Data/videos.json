@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "Section": "video",
     "Subsection": "other",
@@ -833,22 +833,6 @@
   },
   {
     "Section": "video",
-    "Subsection": "other",
-    "UkTitle": "Хто в лісі хазяїн. Український мультфільм",
-    "EnTitle": "",
-    "UkMeta": "9 грудня 2022.",
-    "EnMeta": "",
-    "Links": [
-      {
-        "Type": "video",
-        "UkText": "відео",
-        "EnText": "video",
-        "Url": "https://www.youtube.com/watch?v=bWsGYlfpvUs"
-      }
-    ]
-  },
-  {
-    "Section": "video",
     "Subsection": "music",
     "UkTitle": "Микола Лисенко. Скерцо - Андрій Бондаренко",
     "EnTitle": "",
@@ -1503,38 +1487,7 @@
       }
     ]
   },
-  {
-    "Section": "video",
-    "Subsection": "other",
-    "UkTitle": "Зеленський про Україну-\"актрису\" та АТО",
-    "EnTitle": "",
-    "UkMeta": "31 березня 2019.",
-    "EnMeta": "",
-    "Links": [
-      {
-        "Type": "video",
-        "UkText": "відео",
-        "EnText": "video",
-        "Url": "https://www.youtube.com/watch?v=dAc30QDFyBk"
-      }
-    ]
-  },
-  {
-    "Section": "video",
-    "Subsection": "other",
-    "UkTitle": "Зеленський про Україну",
-    "EnTitle": "",
-    "UkMeta": "30 березня 2019.",
-    "EnMeta": "",
-    "Links": [
-      {
-        "Type": "video",
-        "UkText": "відео",
-        "EnText": "video",
-        "Url": "https://www.youtube.com/watch?v=XzV0NfS_wP0"
-      }
-    ]
-  },
+
   {
     "Section": "video",
     "Subsection": "music",
@@ -4018,22 +3971,6 @@
   {
     "Section": "video",
     "Subsection": "music",
-    "UkTitle": "Оксана Євсюкова - \"Відлуння Латвії\"",
-    "EnTitle": "",
-    "UkMeta": "9 липня 2012.",
-    "EnMeta": "",
-    "Links": [
-      {
-        "Type": "video",
-        "UkText": "відео",
-        "EnText": "video",
-        "Url": "https://www.youtube.com/watch?v=jX1vODnNXTs"
-      }
-    ]
-  },
-  {
-    "Section": "video",
-    "Subsection": "music",
     "UkTitle": "Лютославський. Варіації на тему Паганіні",
     "EnTitle": "",
     "UkMeta": "5 липня 2012.",
@@ -4156,22 +4093,6 @@
         "UkText": "відео",
         "EnText": "video",
         "Url": "https://www.youtube.com/watch?v=mTdHPN51TSI"
-      }
-    ]
-  },
-  {
-    "Section": "video",
-    "Subsection": "other",
-    "UkTitle": "Відчайдушний кіт Васька 1985 DVDRip",
-    "EnTitle": "",
-    "UkMeta": "3 жовтня 2011.",
-    "EnMeta": "",
-    "Links": [
-      {
-        "Type": "video",
-        "UkText": "відео",
-        "EnText": "video",
-        "Url": "https://www.youtube.com/watch?v=Xb3e-rxRkLY"
       }
     ]
   },
