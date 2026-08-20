@@ -7,51 +7,76 @@
 <div class="bio-page coffebackground">
 
     <div class="page-layout">
+        <div class="page-content">
 
-        <!-- ОСНОВНИЙ ТЕКСТ -->
-        @if (Model.Results.Any())
-        {
-            <div class="works-list">
+            <div class="page-intro">
+                <h1>Результат Пошуку</h1>
+            </div>
+            <div class="music page-section">
+                <section class="subsetion">
+                    <div class="music search-results">
 
-                @foreach (var result in Model.Results)
-                {
-                    <div class="work">
-
-                        <span class="work-title">
-                            @Html.Raw(result.Title)
-                        </span>
-
-                        @if (!string.IsNullOrWhiteSpace(result.Description))
+                        <!-- РЕЗУЛЬТАТИ -->
+                        @if (Model.Results.Any())
                         {
-                            <div class="work-meta">
-                                @Html.Raw(result.Description)
-                            </div>
-                        }
+                            <div class="works-list">
 
-                        @if (result.Links.Any())
-                        {
-                            <div class="work-links">
-
-                                @foreach (var link in result.Links)
+                                @foreach (var result in Model.Results)
                                 {
-                                    <a class="resource @link.Type"
-                                       href="@link.Url"
-                                       target="_blank">
-                                        @link.UkText
-                                    </a>
+                                    <div class="work">
+
+                                        <span class="work-title">
+                                            @Html.Raw(result.Title)
+                                        </span>
+
+                                        @if (!string.IsNullOrWhiteSpace(result.Description))
+                                        {
+                                            <div class="work-meta">
+                                                @Html.Raw(result.Description)
+                                            </div>
+                                        }
+
+                                        @if (result.Links.Any())
+                                        {
+                                            <div class="work-links">
+
+                                                @foreach (var link in result.Links)
+                                                {
+                                                    <a class="resource @link.Type"
+                                                       href="@link.Url"
+                                                       target="_blank">
+                                                        @link.UkText
+                                                    </a>
+                                                }
+
+                                            </div>
+                                        }
+
+                                    </div>
                                 }
 
                             </div>
                         }
+                        else
+                        {
+                            <p>Нічого не знайдено.</p>
+                        }
 
                     </div>
-                }
-
             </div>
-        }
-        else
-        {
-            <p>Нічого не знайдено.</p>
-        }
+            </section>
+            <section class="subsetion">
+                <!-- НОВИЙ ПОШУК -->
+                <div class="music search-results">
+                    <form id="searchform" method="post">
+                        <input type="text"
+                               name="search"
+                               placeholder="Пошук по сайту..."
+                               autocomplete="off" />
+                        <button type="submit">Пошук</button>
+                    </form>
+                </div>
+            </section>
+        </div>
     </div>
 </div>

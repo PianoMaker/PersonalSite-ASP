@@ -397,4 +397,12 @@
     #genres-nav {
         display: none;
     }
+
+    /*SEARCH*/
+    .search-results {
+        grid-column: 1 / -1;
+        height: 100vw;
+
+
+    }
 }
