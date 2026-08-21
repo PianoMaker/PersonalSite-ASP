@@ -1,4 +1,4 @@
-namespace PersonalSite
+﻿namespace PersonalSite
 {
     public class Program
     {
@@ -19,7 +19,7 @@ namespace PersonalSite
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
