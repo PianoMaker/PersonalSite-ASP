@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PersonalSite.Data;
 
-namespace PersonalSite.Pages.uk
+namespace PersonalSite.Pages.en
 {
     public class VideoModel : PageModel
     {
