@@ -1,0 +1,82 @@
+﻿@page
+@model PersonalSite.Pages.uk.SearchModel
+@{
+    ViewData["Title"] = "Search";
+}
+
+<div class="bio-page coffebackground">
+
+    <div class="page-layout">
+        <div class="page-content">
+
+            <div class="page-intro">
+                <h1>Результат Пошуку</h1>
+            </div>
+            <div class="music page-section">
+                <section class="subsetion">
+                    <div class="music search-results">
+
+                        <!-- РЕЗУЛЬТАТИ -->
+                        @if (Model.Results.Any())
+                        {
+                            <div class="works-list">
+
+                                @foreach (var result in Model.Results)
+                                {
+                                    <div class="work">
+
+                                        <span class="work-title">
+                                            @Html.Raw(result.Title)
+                                        </span>
+
+                                        @if (!string.IsNullOrWhiteSpace(result.Description))
+                                        {
+                                            <div class="work-meta">
+                                                @Html.Raw(result.Description)
+                                            </div>
+                                        }
+
+                                        @if (result.Links.Any())
+                                        {
+                                            <div class="work-links">
+
+                                                @foreach (var link in result.Links)
+                                                {
+                                                    <a class="resource @link.Type"
+                                                       href="@link.Url"
+                                                       target="_blank">
+                                                        @link.UkText
+                                                    </a>
+                                                }
+
+                                            </div>
+                                        }
+
+                                    </div>
+                                }
+
+                            </div>
+                        }
+                        else
+                        {
+                            <p>Nothing found.</p>
+                        }
+
+                    </div>
+            </div>
+            </section>
+            <section class="subsetion">
+                <!-- НОВИЙ ПОШУК -->
+                <div class="music search-results">
+                    <form id="searchform" method="post">
+                        <input type="text"
+                               name="search"
+                               placeholder="Search ona site..."
+                               autocomplete="off" />
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

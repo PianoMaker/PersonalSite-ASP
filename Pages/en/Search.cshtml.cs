@@ -2,7 +2,7 @@
 using PersonalSite.Data;
 using System.IO;
 
-namespace PersonalSite.Pages.uk
+namespace PersonalSite.Pages.en
 {
 
     public class Results
@@ -97,9 +97,9 @@ namespace PersonalSite.Pages.uk
                 {
                     results.Add(new Results
                     {
-                        Title = work.UkTitle,
+                        Title = work.EnTitle,
                         Section = work.Section,
-                        Description = work.UkMeta,
+                        Description = work.EnMeta,
                         Links = work.Links
                     });
                 }
@@ -116,9 +116,9 @@ namespace PersonalSite.Pages.uk
                 {
                     results.Add(new Results
                     {
-                        Title = video.UkTitle,
+                        Title = video.EnTitle,
                         Section = video.Section,
-                        Description = video.UkMeta,
+                        Description = video.EnMeta,
                         Links = video.Links
                     });
                 }

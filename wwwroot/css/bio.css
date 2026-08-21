@@ -102,6 +102,7 @@
     padding: 1.5rem;
     background-color: var(--tea-color);
     height: 100%;
+    min-width:15%;
 }
 
     .bio-gallery a,
