@@ -1,4 +1,5 @@
-﻿/* =========================
+﻿
+/* =========================
    BIO / RESEARCH / PUBLICATIONS
    ========================= */
 
@@ -43,7 +44,7 @@
     padding: 0;
 }
 
-.page-content {
+.page-content, .web-content {
     min-width: 0;
     max-width: 1060px;
     padding: 3rem 3rem 0;
@@ -240,6 +241,147 @@
 .research-page a {
     display: inline;
 }
+/* =========================
+   WEB
+   ========================= */
+
+.web-layout {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    margin: auto;
+    background-color: #5a3737;
+    padding: 0;
+    background-image: url('/images/backgroundhall.png');
+}
+
+.web-content {
+    max-width: 1300px;
+}
+
+    .web-content h1 {
+        color: white;
+    }
+
+.web-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 20px 20px;
+}
+
+.web-item {
+    min-height: 180px;
+    background-color: rgba(250, 250, 210, 0.85);
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    margin-bottom: 25px;    
+}
+
+    .web-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
+    }
+
+    .web-item > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 35px;
+        width: 100%;
+        height: 100%;
+        padding: 20px 28px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: var(--font-bright-color);
+    }
+
+.web-item-content {
+    flex: 1;
+}
+
+.web-item p {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.web-item small {
+    display: block;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.45;
+}
+
+.web-item img {
+    position:relative;
+    width: 600px;
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;    
+    opacity: 1;
+}
+
+
+
+.webintro {
+    position: relative;
+}
+
+.webintro::before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    right: 0;
+    top: 50%;
+    height: 100px;
+    width: calc(100% + 90px);
+    transform: translateY(-50%);
+    background: rgba(90, 55, 55, 0.15);
+    z-index: 0;
+}
+
+    .webintro::after {
+        content: "";
+        position: absolute;
+        left: -45px;
+        right: 0;
+        top: 50%;
+        height: 300px;
+        width: calc(100% + 90px);
+        transform: translateY(-50%);
+        background: linear-gradient( to bottom, rgba(90, 55, 55, 0.9) 50%, rgba(90, 55, 55, 0.6) 80%, rgba(90, 55, 55, 0) 100% );
+        z-index: 0;
+    }
+
+
+
+.webintro h1 {
+    position: relative;
+    z-index: 1;
+}
+
+.web-section {
+    padding: 0.5rem 2rem 2rem 2rem !important;
+}
+
+
+
+
+/* На вузьких екранах — одна колонка */
+@media (max-width: 750px) {
+    .web-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 /* =========================
@@ -385,7 +527,7 @@
         font-size: 1.7rem;
     }
 
-    .bio-page {
+    .bio-page {page-section
         padding-left: 0;
         padding-right: 0;
         padding: 0 0;
@@ -399,11 +541,57 @@
         display: none;
     }
 
+    .page-section, .web-section {
+        padding: 0.5rem !important;
+    }
+
     /*SEARCH*/
     .search-results {
         grid-column: 1 / -1;
         height: 100vw;
-
-
     }
+
+    .web-layout {
+        width: 100vw;
+        max-width: none;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        box-sizing: border-box;
+    }
+
+    .web-content {
+        width: 100%;
+        max-width: none;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .web-grid {
+        width: 100%;
+        max-width: none;
+        margin: 20px 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .web-item > a {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .web-item img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .webintro {
+        margin-bottom: 0;
+        position: relative;
+    }
+
+        .webintro::before {
+            width: calc(100% + 60px);
+        }
 }
