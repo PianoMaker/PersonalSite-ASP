@@ -115,7 +115,7 @@ footer {
     min-height: 100vh;
     background-image: url('/images/background.png');
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -189,7 +189,7 @@ footer {
     width: 100vw;
     background-image: url('/images/background.png');
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     color: #fff;
 }
@@ -303,7 +303,7 @@ footer {
     }
 
 /* На широкому екрані — 2 колонки */
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     .works-list {
         grid-template-columns: 1fr 1fr;
     }

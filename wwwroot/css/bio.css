@@ -60,8 +60,9 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        left: -100vw;
-        right: -100vw;
+        left: 50%;
+        width: 100vw;
+        transform: translateX(-50%);
         background: var(--coffee-color);
         z-index: -1;
     }
@@ -152,7 +153,7 @@
    GENRE GALLERY
    ========================= */
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     .genre-gallery {
         position: fixed;
         right: 0;
