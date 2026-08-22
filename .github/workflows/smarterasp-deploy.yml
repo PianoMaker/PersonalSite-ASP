@@ -33,9 +33,9 @@ jobs:
         run: |
           $msdeploy = "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe"
 
-          $siteName = '${{ secrets.WEBSITE_NAME }}'
-          $computer = '${{ secrets.SERVER_COMPUTER_NAME }}'
-          $user     = '${{ secrets.SERVER_USERNAME }}'
+          $siteName = 'pianomaker2-001-site2'
+          $computer = 'https://win1232.site4now.net:8172/MsDeploy.axd?site=pianomaker2-001-site2'
+          $user     = 'pianomaker2-001'
           $password = '${{ secrets.SERVER_PASSWORD }}'
 
           & $msdeploy `
