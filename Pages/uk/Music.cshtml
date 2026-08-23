@@ -3,6 +3,19 @@
 
 @{
     ViewData["Title"] = "Музичні твори";
+    string GetIcon(string type)
+    {
+        return type switch
+        {
+            "notes" => "notes.svg",
+            "spotify" => "spotify.svg",
+            "bandcamp" => "bandcamp.svg",
+            "video" => "youtube.svg",
+            "youtube" => "youtube.svg",
+            "audio" => "audio.svg",
+            _ => "link.svg"
+        };
+    }
 }
 
 <div class="bio-page coffebackground">
@@ -45,10 +58,16 @@
 
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
 
@@ -90,10 +109,16 @@
                                     <div class="work-links">
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
                                     </div>
@@ -134,10 +159,16 @@
                                     <div class="work-links">
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
                                     </div>
@@ -178,10 +209,16 @@
                                     <div class="work-links">
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
                                     </div>
@@ -222,10 +259,16 @@
                                     <div class="work-links">
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
                                     </div>
@@ -266,10 +309,16 @@
                                     <div class="work-links">
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
                                     </div>
@@ -316,10 +365,16 @@
 
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
 
@@ -358,10 +413,16 @@
 
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
 
@@ -400,10 +461,16 @@
 
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
 
@@ -444,10 +511,16 @@
                                     <div class="work-links">
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
                                     </div>
@@ -488,10 +561,16 @@
                                     <div class="work-links">
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
                                     </div>
@@ -530,10 +609,16 @@
                                 <div class="work-links">
                                     @foreach (var link in work.Links)
                                     {
-                                        <a class="resource @link.Type"
+                                        <a class="work-link @link.Type"
                                            href="@link.Url"
-                                           target="_blank">
-                                            @link.UkText
+                                           target="_blank"
+                                           rel="noopener noreferrer">
+
+                                            <img class="link-icon"
+                                                 src="~/images/icons/@GetIcon(link.Type)"
+                                                 alt="" />
+
+                                            <span>@link.UkText</span>
                                         </a>
                                     }
                                 </div>
@@ -573,10 +658,16 @@
                                     <div class="work-links">
                                         @foreach (var link in work.Links)
                                         {
-                                            <a class="resource @link.Type"
+                                            <a class="work-link @link.Type"
                                                href="@link.Url"
-                                               target="_blank">
-                                                @link.UkText
+                                               target="_blank"
+                                               rel="noopener noreferrer">
+
+                                                <img class="link-icon"
+                                                     src="~/images/icons/@GetIcon(link.Type)"
+                                                     alt="" />
+
+                                                <span>@link.UkText</span>
                                             </a>
                                         }
                                     </div>

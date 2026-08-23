@@ -476,6 +476,18 @@
         "Url": "https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d0a9d0b5d0b4d180d0b8d0ba-d184d0bdd0be.pdf"
       },
       {
+        "Type": "spotify",
+        "UkText": "аудіо",
+        "EnText": "audio",
+        "Url": "https://open.spotify.com/track/0jeYnPGiR4tRBTsYY4Yb68"
+      },
+      {
+        "Type": "bandcamp",
+        "UkText": "аудіо",
+        "EnText": "audio",
+        "Url": "https://andriibondarenko.bandcamp.com/track/-"
+      },
+      {
         "Type": "video",
         "UkText": "відео",
         "EnText": "video",
@@ -666,12 +678,16 @@
         "UkText": "ноти",
         "EnText": "score",
         "Url": "https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d093d0b0d0bbd18f.pdf"
+      },
+      {
+        "Type": "bandcamp",
+        "UkText": "аудіо",
+        "EnText": "audio",
+        "Url": "https://andriibondarenko.bandcamp.com/track/--4"
       }
     ]
   },
   {
-    "Section": "piano",
-    "Subsection": "folk",
     "UkTitle": "«Ой у лузі червона калина»",
     "EnTitle": "“Oh, the Red Viburnum in the Meadow”",
     "UkMeta": "",

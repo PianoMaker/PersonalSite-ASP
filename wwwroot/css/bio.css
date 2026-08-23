@@ -465,7 +465,7 @@
    RESOURCE LINKS
    ========================= */
 
-.works-list a.resource {
+/*.works-list a.resource {
     display: inline-block;
     padding: 1px 7px;
     margin: 1px 2px;
@@ -497,7 +497,65 @@
 .works-list a.resource:hover {
     background: #c9b393;
     color: #302820;
+}*/
+
+.work {
+    padding: 0 0 18px 0;
+    margin-bottom: 20px;
 }
+
+.work-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin: 4px 14px 4px 0;
+    color: #666;
+    text-decoration: none;
+    font-size: 0.82rem;
+    line-height: 1.4;
+}
+
+    .work-link:hover {
+        opacity: 0.7;
+    }
+
+    .work-link .link-icon {
+        width: 18px;
+        height: 18px;
+        display: block;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    /* Ноти */
+    .work-link.notes {
+        color: #a9854a;
+    }
+
+    /* Spotify */
+    .work-link.spotify {
+        color: #00a95c;
+    }
+
+    /* Bandcamp */
+    .work-link.bandcamp {
+        color: #1688a5;
+    }
+
+    /* YouTube */
+    .work-link.youtube,
+    .work-link.video {
+        color: #644;
+    }
+
+    /* Розмір SVG */
+    .work-link .link-icon svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+
 
 
 /* =========================
@@ -531,7 +589,7 @@
         font-size: 1.7rem;
     }
 
-    .bio-page {page-section
+    .bio-page {
         padding-left: 0;
         padding-right: 0;
         padding: 0 0;
