@@ -9,7 +9,6 @@
     <meta property="og:image" content="https://andriibondarenko.pp.ua/images/og-image.png" />
     <meta property="og:url" content="https://andriibondarenko.pp.ua@Context.Request.Path" />
     <meta property="og:type" content="website" />
-
     <link rel="canonical" href="https://andriibondarenko.pp.ua@Context.Request.Path" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -30,13 +29,20 @@
             "https://orcid.org/0000-0002-6856-991X",
             "https://www.wikidata.org/wiki/Q4093179",
             "https://en.wikipedia.org/wiki/Andriy_Bondarenko",
-            "https://soundbetter.com/profiles/610791-andrii-bondarenko"
+            "https://soundbetter.com/profiles/610791-andrii-bondarenko",
             "https://andriibondarenko.bandcamp.com/"
           ]
         }
     </script>
 
-    <title>@ViewData["Title"] - Андрій Бондаренко</title>
+    @{
+        var isEnglish = Context.Request.Path.StartsWithSegments("/en");
+        var authorTitle = isEnglish
+        ? "Andrii Bondarenko, composer, pianist, researcher"
+        : "Андрій Бондаренко, композитор, піаніст, дослідник";
+    }
+
+    <title>@ViewData["Title"] - @authorTitle</title>
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -86,16 +92,14 @@
 
                             <li class="nav-item">
                                 <a class="nav-link text-dark" href="/en/Video">Video</a>
-                            </li>
-
-                            
+                            </li>                            
 
                             <li class="nav-item">
                                 <a class="nav-link text-dark" href="/en/Research">Research</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="/uk/Web">Web-projects</a>
+                                <a class="nav-link text-dark" href="/en/Web">Web-projects</a>
                             </li>
 @* 
                             <li class="nav-item">
