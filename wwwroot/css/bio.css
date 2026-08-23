@@ -158,7 +158,7 @@
     .genre-gallery {
         position: fixed;
         top: 0;
-        right: max(0px, calc((100vw - 1200px) / 2));
+        right: max(0px, calc((100vw - 1221px) / 2));
         padding: 70px 0 0 0;
         height: 100%;
         z-index: 4;
