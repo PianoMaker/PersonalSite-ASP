@@ -42,6 +42,7 @@
     margin: auto;
     background-color: white;
     padding: 0;
+    position: relative;
 }
 
 .page-content, .web-content {
@@ -156,13 +157,14 @@
 @media (min-width: 1000px) {
     .genre-gallery {
         position: fixed;
-        right: 0;
         top: 0;
+        right: max(0px, calc((100vw - 1200px) / 2));
         padding: 70px 0 0 0;
         height: 100%;
         z-index: 4;
     }
 }
+
 
 
 /* =========================
@@ -514,6 +516,7 @@
         grid-template-columns: 1fr;
         gap: 3rem;
         padding-left: 0;
+        position: relative;
     }
 
     .bio-gallery-inner {
