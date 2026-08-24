@@ -20,7 +20,7 @@
                 <!-- МУЗИКА І МУЗИКОЗНАВСТВО -->
                 <section class="subsetion">
 
-                 @*    <h2>Музикознавство</h2> *@
+                    @*    <h2>Музикознавство</h2> *@
 
 
                     <!-- Навчальний посібник -->
@@ -41,172 +41,172 @@
                         </li>
 
                     </ul>
+                </section>
 
+                <!-- НАУКОВІ СТАТТІ -->
+                <section class="subsetion" id="articles">
 
-                    <!-- НАУКОВІ СТАТТІ -->
-                    <section class="subsetion" id="articles">
+                    <h2>Наукові статті</h2>
 
-                        <h2>Наукові статті</h2>
+                    <ul class="publications-list">
 
-                        <ul class="publications-list">
+                        @foreach (var work in Model.Works
+                                                .Where(w => w.Subsection == "articles"))
+                        {
+                            <li>
 
-                            @foreach (var work in Model.Works
-                                                        .Where(w => w.Subsection == "articles"))
-                            {
-                                <li>
-
-                                    @if (work.Links.Any())
-                                    {
-                                        <a href="@work.Links.First().Url" target="_blank">
-                                            <strong>
-                                                @Html.Raw(work.UkTitle)
-                                            </strong>
-                                        </a>
-                                    }
-                                    else
-                                    {
+                                @if (work.Links.Any())
+                                {
+                                    <a href="@work.Links.First().Url" target="_blank">
                                         <strong>
                                             @Html.Raw(work.UkTitle)
                                         </strong>
-                                    }
+                                    </a>
+                                }
+                                else
+                                {
+                                    <strong>
+                                        @Html.Raw(work.UkTitle)
+                                    </strong>
+                                }
 
-                                    @if (!string.IsNullOrWhiteSpace(work.UkMeta))
-                                    {
-                                        <span>
-                                            @Html.Raw(work.UkMeta)
-                                        </span>
-                                    }
+                                @if (!string.IsNullOrWhiteSpace(work.UkMeta))
+                                {
+                                    <span>
+                                        @Html.Raw(work.UkMeta)
+                                    </span>
+                                }
 
-                                </li>
-                            }
+                            </li>
+                        }
 
-                        </ul>
+                    </ul>
 
-                    </section>
+                </section>
 
-                    <!-- АНГЛІЙСЬКОЮ -->
-                    <section class="subsetion" id="english">
+                <!-- АНГЛІЙСЬКОЮ -->
+                <section class="subsetion" id="english">
 
-                        <h2>Англійською</h2>
+                    <h2>Англійською</h2>
 
-                        <ul class="publications-list">
+                    <ul class="publications-list">
 
-                            @foreach (var work in Model.Works
-                                                        .Where(w => w.Subsection == "articles-en"))
-                            {
-                                <li>
+                        @foreach (var work in Model.Works
+                                                .Where(w => w.Subsection == "articles-en"))
+                        {
+                            <li>
 
-                                    @if (work.Links.Any())
-                                    {
-                                        <a href="@work.Links.First().Url" target="_blank">
-                                            <strong>
-                                                @Html.Raw(work.EnTitle)
-                                            </strong>
-                                        </a>
-                                    }
-                                    else
-                                    {
+                                @if (work.Links.Any())
+                                {
+                                    <a href="@work.Links.First().Url" target="_blank">
                                         <strong>
                                             @Html.Raw(work.EnTitle)
                                         </strong>
-                                    }
+                                    </a>
+                                }
+                                else
+                                {
+                                    <strong>
+                                        @Html.Raw(work.EnTitle)
+                                    </strong>
+                                }
 
-                                    @if (!string.IsNullOrWhiteSpace(work.EnMeta))
-                                    {
-                                        <span>
-                                            @Html.Raw(work.EnMeta)
-                                        </span>
-                                    }
+                                @if (!string.IsNullOrWhiteSpace(work.EnMeta))
+                                {
+                                    <span>
+                                        @Html.Raw(work.EnMeta)
+                                    </span>
+                                }
 
-                                </li>
-                            }
+                            </li>
+                        }
 
-                        </ul>
+                    </ul>
 
-                    </section>
+                </section>
 
 
-                    <!-- ТЕЗИ ДОПОВІДЕЙ -->
-                    <section class="subsetion" id="thesis">
+                <!-- ТЕЗИ ДОПОВІДЕЙ -->
+                <section class="subsetion" id="thesis">
 
-                        <h2>Тези доповідей</h2>
+                    <h2>Тези доповідей</h2>
 
-                        <ul class="publications-list">
+                    <ul class="publications-list">
 
-                            @foreach (var work in Model.Works
-                                                        .Where(w => w.Subsection == "theses"))
-                            {
-                                <li>
+                        @foreach (var work in Model.Works
+                                                .Where(w => w.Subsection == "theses"))
+                        {
+                            <li>
 
-                                    @if (work.Links.Any())
-                                    {
-                                        <a href="@work.Links.First().Url" target="_blank">
-                                            <strong>
-                                                @Html.Raw(work.UkTitle)
-                                            </strong>
-                                        </a>
-                                    }
-                                    else
-                                    {
+                                @if (work.Links.Any())
+                                {
+                                    <a href="@work.Links.First().Url" target="_blank">
                                         <strong>
                                             @Html.Raw(work.UkTitle)
                                         </strong>
-                                    }
+                                    </a>
+                                }
+                                else
+                                {
+                                    <strong>
+                                        @Html.Raw(work.UkTitle)
+                                    </strong>
+                                }
 
-                                    @if (!string.IsNullOrWhiteSpace(work.UkMeta))
-                                    {
-                                        <span>
-                                            @Html.Raw(work.UkMeta)
-                                        </span>
-                                    }
+                                @if (!string.IsNullOrWhiteSpace(work.UkMeta))
+                                {
+                                    <span>
+                                        @Html.Raw(work.UkMeta)
+                                    </span>
+                                }
 
-                                </li>
-                            }
+                            </li>
+                        }
 
-                        </ul>
+                    </ul>
 
-                    </section>
-                    <!-- ПУБЛІКАЦІЇ -->
-                    <section class="subsetion" id="periodicals">
+                </section>
+                <!-- ПУБЛІКАЦІЇ -->
+                <section class="subsetion" id="periodicals">
 
-                        <h2>Тези доповідей</h2>
+                    <h2>Тези доповідей</h2>
 
-                        <ul class="publications-list">
+                    <ul class="publications-list">
 
-                            @foreach (var work in Model.Works
-                                                        .Where(w => w.Subsection == "periodicals"))
-                            {
-                                <li>
+                        @foreach (var work in Model.Works
+                                                .Where(w => w.Subsection == "periodicals"))
+                        {
+                            <li>
 
-                                    @if (work.Links.Any())
-                                    {
-                                        <a href="@work.Links.First().Url" target="_blank">
-                                            <strong>
-                                                @Html.Raw(work.UkTitle)
-                                            </strong>
-                                        </a>
-                                    }
-                                    else
-                                    {
+                                @if (work.Links.Any())
+                                {
+                                    <a href="@work.Links.First().Url" target="_blank">
                                         <strong>
                                             @Html.Raw(work.UkTitle)
                                         </strong>
-                                    }
+                                    </a>
+                                }
+                                else
+                                {
+                                    <strong>
+                                        @Html.Raw(work.UkTitle)
+                                    </strong>
+                                }
 
-                                    @if (!string.IsNullOrWhiteSpace(work.UkMeta))
-                                    {
-                                        <span>
-                                            @Html.Raw(work.UkMeta)
-                                        </span>
-                                    }
+                                @if (!string.IsNullOrWhiteSpace(work.UkMeta))
+                                {
+                                    <span>
+                                        @Html.Raw(work.UkMeta)
+                                    </span>
+                                }
 
-                                </li>
-                            }
+                            </li>
+                        }
 
-                        </ul>
+                    </ul>
 
-                    </section>
-               
+                </section>
+
 
             </div>
         </div>
