@@ -423,7 +423,14 @@
     "EnTitle": "Variations",
     "UkMeta": "1996",
     "EnMeta": "1996",
-    "Links": []
+    "Links": [
+      {
+        "Type": "audio",
+        "UkText": "аудіо",
+        "EnText": "audio",
+        "Url": "https://andriibondarenko.bandcamp.com/track/variations-for-piano"
+      }
+    ]
   },
   {
     "Section": "piano",
@@ -959,15 +966,21 @@
     "Section": "POP",
     "Subsection": "",
     "UkTitle": "«Прекрасний Києве»",
-    "EnTitle": "«Прекрасний Києве»",
-    "UkMeta": "на слова М. Рильського · Es-moll, fis-moll",
-    "EnMeta": "words by M. Rylskyi · Es-moll, fis-moll",
+    "EnTitle": "«Prekrasnyi Kyieve (Beautiful Kyiv)»",
+    "UkMeta": "на слова М. Рильського",
+    "EnMeta": "words by M. Rylskyi",
     "Links": [
       {
         "Type": "notes",
         "UkText": "ноти",
         "EnText": "score",
         "Url": "https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/03/d09fd180d0b5d0bad180d0b0d181d0bdd0b8d0b9-d09ad0b8d194d0b2d0b5-d182d180d0b0d0bdd181d0bfd0bed180d182-fis.pdf"
+      },
+      {
+        "Type": "audio",
+        "UkText": "аудіо",
+        "EnText": "audio",
+        "Url": "https://andriibondarenko.bandcamp.com/track/prekrasnyi-kyieve-beautiful-kyiv"
       },
       {
         "Type": "video",
