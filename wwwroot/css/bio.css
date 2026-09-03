@@ -500,8 +500,8 @@
 }*/
 
 .work {
-    padding: 0 0 18px 0;
-    margin-bottom: 20px;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
 }
 
 .work-link {
@@ -656,4 +656,9 @@
         .webintro::before {
             width: calc(100% + 60px);
         }
+
+    .work {
+        margin-bottom: 4px !important;
+    }
+
 }

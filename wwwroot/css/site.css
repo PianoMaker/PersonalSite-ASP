@@ -220,7 +220,7 @@ footer {
 .works-list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem 3rem;
+    gap: 1rem 3rem;
 }
 
     .works-list > div {
@@ -303,9 +303,18 @@ footer {
 /* На широкому екрані — 2 колонки */
 @media (min-width: 1000px) {
     .works-list {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;     
+        
+    }    
+}
+
+@media (max-width: 1000px) {
+    .works-list {
+        gap: 0.4rem;
     }
 }
+
+
 
 
 .research-list > div {
