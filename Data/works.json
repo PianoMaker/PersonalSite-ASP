@@ -425,7 +425,7 @@
     "EnMeta": "1996",
     "Links": [
       {
-        "Type": "audio",
+        "Type": "bandcamp",
         "UkText": "аудіо",
         "EnText": "audio",
         "Url": "https://andriibondarenko.bandcamp.com/track/variations-for-piano"
@@ -761,77 +761,39 @@
       }
     ]
   },
-  {
-    "Section": "folk",
-    "Subsection": "",
-    "UkTitle": "Чотири народні пісні для голосу і фортепіано",
-    "EnTitle": "Four folk songs for voice and piano",
-    "UkMeta": "2014 · редакція 2022",
-    "EnMeta": "2014 · revision 2022",
-    "Links": []
-  },
-  {
-    "Section": "folk",
-    "Subsection": "",
-    "UkTitle": "«Ой у лузі червона калина»",
-    "EnTitle": "«Ой у лузі червона калина»",
-    "UkMeta": "",
-    "EnMeta": "",
-    "Links": [
+    {
+      "Section": "folk",
+      "Subsection": "",
+      "UkTitle": "Чотири народні пісні для голосу і фортепіано",
+      "EnTitle": "Four folk songs for voice and piano",
+      "UkMeta": "2014 · редакція 2022",
+      "EnMeta": "2014 · revision 2022",
+      "Links": [
+        {
+          "Type": "notes",
+          "UkText": "«Ой у лузі червона калина»",
+          "EnText": "«Oh, the Red Viburnum in the Meadow»",
+          "Url": "https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d09ed0b9-d183-d0bbd183d0b7d196-v2022-fis.pdf"
+        },
+        {
+          "Type": "notes",
+          "UkText": "«Лента за лентою»",
+          "EnText": "«Ribbon after Ribbon»",
+          "Url": "https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/06/d0bbd0b5d0bdd182d0b0-d0b7d0b0-d0bbd0b5d0bdd182d0bed18e-v2022-full-score.pdf"
+        },
+        {
+          "Type": "notes",
+          "UkText": "«Ой у лісі на полянці»",
+          "EnText": "«Oh, in the Forest Clearing»",
+          "Url": "https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/06/d09ed0b9-d183-d0bbd196d181d196-v2022.pdf"
+        },
       {
         "Type": "notes",
-        "UkText": "ноти",
-        "EnText": "score",
-        "Url": "https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d09ed0b9-d183-d0bbd183d0b7d196-v2022-fis.pdf"
-      }
-    ]
-  },
-  {
-    "Section": "folk",
-    "Subsection": "",
-    "UkTitle": "«Лента за лентою»",
-    "EnTitle": "«Лента за лентою»",
-    "UkMeta": "",
-    "EnMeta": "",
-    "Links": [
-      {
-        "Type": "notes",
-        "UkText": "ноти",
-        "EnText": "score",
-        "Url": "https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/06/d0bbd0b5d0bdd182d0b0-d0b7d0b0-d0bbd0b5d0bdd182d0bed18e-v2022-full-score.pdf"
-      }
-    ]
-  },
-  {
-    "Section": "folk",
-    "Subsection": "",
-    "UkTitle": "«Ой у лісі на полянці»",
-    "EnTitle": "«Ой у лісі на полянці»",
-    "UkMeta": "",
-    "EnMeta": "",
-    "Links": [
-      {
-        "Type": "notes",
-        "UkText": "ноти",
-        "EnText": "score",
-        "Url": "https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/06/d09ed0b9-d183-d0bbd196d181d196-v2022.pdf"
-      }
-    ]
-  },
-  {
-    "Section": "folk",
-    "Subsection": "",
-    "UkTitle": "«За Україну»",
-    "EnTitle": "«За Україну»",
-    "UkMeta": "",
-    "EnMeta": "",
-    "Links": [
-      {
-        "Type": "notes",
-        "UkText": "ноти",
-        "EnText": "score",
+        "UkText": "«За Україну»",
+        "EnText": "«For Ukraine»",
         "Url": "https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d097d0b0-d0a3d0bad180d0b0d197d0bdd183-v2022-g.pdf"
       }
+
     ]
   },
   {
@@ -839,8 +801,8 @@
     "Subsection": "",
     "UkTitle": "«Батько наш Бандера»",
     "EnTitle": "«Bandera - our Father»",
-    "UkMeta": "",
-    "EnMeta": "",
+    "UkMeta": "для фортепіано",
+    "EnMeta": "for piano",
     "Links": [
       {
         "Type": "notes",
@@ -861,8 +823,8 @@
     "Subsection": "",
     "UkTitle": "«Зродились ми великої години»",
     "EnTitle": "«Зродились ми великої години»",
-    "UkMeta": "",
-    "EnMeta": "",
+    "UkMeta": "для голосу і фортепіано",
+    "EnMeta": "for voice and piano",
     "Links": [
       {
         "Type": "notes",
