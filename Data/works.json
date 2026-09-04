@@ -822,16 +822,23 @@
     "Section": "folk",
     "Subsection": "",
     "UkTitle": "«Зродились ми великої години»",
-    "EnTitle": "«Зродились ми великої години»",
+    "EnTitle": "«We Were Born in a Great Hour»",
     "UkMeta": "для голосу і фортепіано",
     "EnMeta": "for voice and piano",
     "Links": [
+      {
+        "Type": "video",
+        "UkText": "Вик. Едгар Бондаренко",
+        "EnText": "perf. Edgar Bondarenko",
+        "Url": "https://www.youtube.com/watch?v=EYCrQ8yMepg"
+      },
       {
         "Type": "notes",
         "UkText": "ноти",
         "EnText": "score",
         "Url": "https://andrijbondarenko.wordpress.com/wp-content/uploads/2022/07/d097d180d0bed0b4d0b8d0bbd0b8d181d18c-d0bcd0b8-d0b2d0b5d0bbd0b8d0bad0bed197-d0b3d0bed0b4d0b8d0bdd0b8.pdf"
       }
+
     ]
   },
   {
